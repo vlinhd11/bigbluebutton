@@ -952,7 +952,7 @@ body {
     -webkit-transition: transform 0.3s linear;
     -ms-transition: transform 0.3s linear;
     -o-transition: transform 0.3s linear;
-
+	-webkit-transform: translateX(100vw);
     &.menuOut {
       transform: translate(40vw, 0);
       -moz-transform: translate(40vw, 0);
@@ -1361,3 +1361,12 @@ body {
 /*********************************/
 /*End of Spinning Bar's Styling  */
 /*********************************/
+
+settingsMenu {
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+and (min-color-index:0)
+{  
+	right: 0;
+	display: none;
+}
+}
